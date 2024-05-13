@@ -3,7 +3,7 @@ function chuyendoitiente(){
     document.getElementById('sotien').value='';
     let from = document.getElementById('from').value;
     let to = document.getElementById('to').value;
-    let rates = {
+    /*let rates = {
         usd: {
             vnd: 25452.5,
             usd: 1
@@ -14,6 +14,8 @@ function chuyendoitiente(){
         }
     };
 
-    var result = x * rates[from][to];
+    let result = x * rates[from][to];
+     */
+    let result = x * from / to;
     document.getElementById('result').innerHTML='Result :' + result;
 }
