@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="sotien">
+        </td>
+        <td>
+            <select id="from">
+                <option value="vnd">VietNam</option>
+                <option value="usd">USD</option>
+            </select>
+        </td>
+        <td>
+            <select id="to">
+                <option value="vnd">VietNam</option>
+                <option value="usd">USD</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="chuyendoitiente()">Covert</button>
+        </td>
+    </tr>
+</table>
+<p id="result" style="color:blue"></p>
+<script src="chuyendoitiente.js"></script>
+</body>
+</html>
