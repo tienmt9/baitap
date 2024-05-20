@@ -13,7 +13,7 @@
         if (a[i] % 2 == 0) {
             min = a[i];
             for (let j = i + 1; j < a.length; j++) {
-                if (a[j] % 2 == 0 && min > a[j]) {
+                if (a[j] % 2 == 0 && a[i] > a[j]) {
                     min = a[j];
                 }
             }
