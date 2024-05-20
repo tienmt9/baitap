@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [3, 2, 4, 5, 12, 34, 1, 5, 6];
+    // tim min chan
+    let min;
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] % 2 == 0) {
+            min = a[i];
+            for (let j = i + 1; j < a.length; j++) {
+                if (a[j] % 2 == 0 && min > a[j]) {
+                    min = a[j];
+                }
+            }
+            break;
+        }
+    }
+
+    /*if (min % 2 !== 0) {
+        document.write('ko co');
+    } else */
+    document.write(min);
+</script>
+</body>
+</html>
