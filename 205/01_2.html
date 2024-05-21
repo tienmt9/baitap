@@ -10,10 +10,11 @@
     Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó
      */
     let a = [];
+    let ele = +prompt('Nhập số nguyên');
+    a.push(ele);
     for (let i = 0; i < 10; i++) {
-        let ele = +prompt('Nhập số nguyên');
+        ele = +prompt('Nhập số nguyên');
         for (let j = 0;; j++) {
-            ele = +prompt('Nhập số nguyên');
             if (ele == a[j]) {
                 ele = +prompt('Nhập lại');
             } else {
