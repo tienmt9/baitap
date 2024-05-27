@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /* Viết chương trình nhập vào mảng số nguyên gồm 10 phần tử khác nhau nếu giống nhau thì nhập lại.
+    Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó
+     */
+    let a = [];
+    for (let i = 0; i < 10; i++) {
+        ele = +prompt('Nhập số nguyên');
+        for (let j = 0; j < i; j++) {
+            while (ele == a[j]) {
+                ele = +prompt('Nhập lại');
+            }
+        }
+        a.push(ele);
+    }
+    let max = a[0];
+    for (let i = 0; i < 10; i++) {
+        if (max < a [i]) {
+            max = a[i];
+        }
+    }
+    document.write(max + '<br>');
+    document.write(a.indexOf(max));
+</script>
+
+</body>
+</html>
