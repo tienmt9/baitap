@@ -6,12 +6,17 @@
 </head>
 <body>
 <script>
-    let a = +prompt("nhap A");
-    let b = +prompt("nhap B");
-    alert(a+b);
-    alert(a-b);
-    alert(a*b);
-    alert(a/b);
+    function swap(arr) {
+        //your code here
+        if (arr.length < 2) {
+            return "chieu dai toi thieu la 2";
+        }
+        let arrnew = arr;
+        let swap = arr[0];
+        arr[0] = arr[arr.length - 1];
+        arr[length - 1] = swap;
+        return arrnew;
+    }
 </script>
 </body>
 </html>
